@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    @yield('title')
     
     @include('layouts.head')
 </head>

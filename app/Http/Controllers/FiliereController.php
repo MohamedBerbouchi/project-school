@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Stagiaire;
+use App\Models\Filiere;
 use Illuminate\Http\Request;
 
-class StagiaireController extends Controller
+class FiliereController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,8 @@ class StagiaireController extends Controller
      */
     public function index()
     {
-        return view('stagiaire.index');
+        return view('filiere.index');
     }
-    
 
     /**
      * Show the form for creating a new resource.
@@ -25,7 +24,8 @@ class StagiaireController extends Controller
      */
     public function create()
     {
-         return view('stagiaire.create');
+        return view('filiere.create');
+        
     }
 
     /**
@@ -42,24 +42,24 @@ class StagiaireController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Stagiaire  $stagiaire
+     * @param  \App\Models\Filiere  $filiere
      * @return \Illuminate\Http\Response
      */
-    public function show(Stagiaire $stagiaire)
+    public function show(Filiere $filiere)
     {
-        return view('stagiaire.show');
-
+        // return view('filiere.show');
+        
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Stagiaire  $stagiaire
+     * @param  \App\Models\Filiere  $filiere
      * @return \Illuminate\Http\Response
      */
-    public function edit(Stagiaire $stagiaire)
+    public function edit(Filiere $filiere)
     {
-        return view('stagiaire.edit');
+        return view('filiere.edit');
 
     }
 
@@ -67,10 +67,10 @@ class StagiaireController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Stagiaire  $stagiaire
+     * @param  \App\Models\Filiere  $filiere
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Stagiaire $stagiaire)
+    public function update(Request $request, Filiere $filiere)
     {
         //
     }
@@ -78,17 +78,11 @@ class StagiaireController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Stagiaire  $stagiaire
+     * @param  \App\Models\Filiere  $filiere
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Stagiaire $stagiaire)
+    public function destroy(Filiere $filiere)
     {
         //
-    }
-
-
-    public function impression()
-    {
-        return view('stagiaire.impression');
     }
 }

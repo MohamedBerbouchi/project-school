@@ -9,11 +9,11 @@
     <div class="page-header">
         <div class="row">
             <div class="col-sm-12">
-                <h3 class="page-title">Customers</h3>
+                <h3 class="page-title">Stagiaires</h3>
                 <ul class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                    <li class="breadcrumb-item"><a href="customers.html">Customers</a></li>
-                    <li class="breadcrumb-item active">Add Customers</li>
+                    <li class="breadcrumb-item"><a href="{{  route('home') }}">Tableau de bord</a></li>
+                    <li class="breadcrumb-item"><a href="{{  route('stagiaires.index') }}">Stagiaires</a></li>
+                    <li class="breadcrumb-item active">Nouveau stagiaire</li>
                 </ul>
             </div>
         </div>
@@ -23,65 +23,90 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Basic Info</h4>
                     <form action="#">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Name</label>
+                                    <label>PRENOM</label>
                                     <input type="text" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Email</label>
-                                    <input type="email" class="form-control">
+                                    <label>Nom</label>
+                                    <input type="text" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Primary Currency</label>
+                                    <label>DATE_NAISSANCE</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>LIEU_NAISSANCE</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>ADRESSE</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>VILLE</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>CIN</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>TEL</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>NIVEAU SCOLAIRE</label>
                                     <select class="select">
-                                        <option>Select Currency</option>
-                                        <option>EUR Euro</option>
-                                        <option>INR Indoan Rupee</option>
-                                        <option>USD- US Dollar</option>
+                                        <option>Select Country</option>
+                                        <option>Afghanistan</option>
+                                        <option>Afghanistan</option>
+                                        <option>Albania</option>
+                                        <option>Algeria</option>
+                                        <option>American Samoa</option>
+                                        <option>Andorra</option>
+                                        <option>Angola</option>
+                                        <option>Anguilla</option>
+                                        <option selected>United States</option>
                                     </select>
                                 </div>
                             </div>
+
                             <div class="col-md-6">
+                               
+
                                 <div class="form-group">
-                                    <label>Primary Contact Name</label>
+                                    <label>DERNIER DIPLOME:</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>DERNIER ETABLISSMENT:</label>
                                     <input type="text" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Phone</label>
+                                    <label>NUM D'INSCRIPTION</label>
                                     <input type="text" class="form-control">
                                 </div>
+                
                                 <div class="form-group">
-                                    <label>Website</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <h4 class="card-title mt-4">Billing Address</h4>
-                    <form action="#">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Name</label>
-                                    <input type="text" class="form-control">
+                                    <label>DATE D'INSCRIPTION :</label>
+                                    <input type="date" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>State</label>
-                                    <input type="text" class="form-control">
+                                    <label>CODE NATIONAL:</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>PHOTO:</label>
+                                    <input type="file" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Address</label>
-                                    <textarea rows="5" cols="5" class="form-control"
-                                        placeholder="Enter Address"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Country</label>
+                                    <label>Filière:</label>
                                     <select class="select">
                                         <option>Select Country</option>
                                         <option>Afghanistan</option>
@@ -96,72 +121,39 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label>City</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label>Phone</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label>Zip Code</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <h4 class="card-title mt-4">Shipping Address</h4>
-                    <form action="#">
-                        <div class="text-end">
-                            <button type="submit" class="btn btn-outline-primary btn-sm">Copy from
-                                Billing</button>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Name:</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label>State:</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label>Address:</label>
-                                    <textarea rows="5" cols="5" class="form-control"
-                                        placeholder="Enter Address"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Country:</label>
+                                    <label>Année scolaie:</label>
                                     <select class="select">
                                         <option>Select Country</option>
-                                        <option value="Afganistan">Afghanistan</option>
-                                        <option value="Albania">Albania</option>
-                                        <option value="Algeria">Algeria</option>
-                                        <option value="American Samoa">American Samoa</option>
-                                        <option value="Andorra">Andorra</option>
-                                        <option value="Angola">Angola</option>
-                                        <option value="Anguilla">Anguilla</option>
+                                        <option>Afghanistan</option>
+                                        <option>Afghanistan</option>
+                                        <option>Albania</option>
+                                        <option>Algeria</option>
+                                        <option>American Samoa</option>
+                                        <option>Andorra</option>
+                                        <option>Angola</option>
+                                        <option>Anguilla</option>
+                                        <option selected>United States</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label>City:</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label>Phone:</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label>Zip Code:</label>
-                                    <input type="text" class="form-control">
+                                    <label>Classe:</label>
+                                    <select class="select">
+                                        <option>Select Country</option>
+                                        <option>Afghanistan</option>
+                                        <option>Afghanistan</option>
+                                        <option>Albania</option>
+                                        <option>Algeria</option>
+                                        <option>American Samoa</option>
+                                        <option>Andorra</option>
+                                        <option>Angola</option>
+                                        <option>Anguilla</option>
+                                        <option selected>United States</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
                         <div class="text-end mt-4">
-                            <button type="submit" class="btn btn-primary">Add Customer</button>
+                            <button type="submit" class="btn btn-primary">Enregistrer le Stagiaire <i class="fe fe-save "></i> </button>
                         </div>
                     </form>
                 </div>
