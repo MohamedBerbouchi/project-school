@@ -49,36 +49,32 @@
             <div class="card card-table">
                 <div class="card-body">
                     <div class="table-responsive">
-                        <table class="table table-center  table-hover text-center " style="font-size:10px">
-                            <thead class="thead-light " >
-                                <tr class="table-dark" >
-                                    <th style="font-size:14px">Customer</th>
-                                    <th style="font-size:14px">Email</th>
-                                    <th style="font-size:14px">Amount Due</th>
-                                    <th style="font-size:14px">Status</th>
+                    <table class="table table-center table-hover  text-center" style="font-size:10px">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th style="font-size:14px">Id</th>
+                                    <th style="font-size:14px">Nom</th>
+                                    <th style="font-size:14px">Année scolaire</th>
+                                    <th style="font-size:14px">Filière</th>
+                                    <th style="font-size:14px" >Classe</th>
+                                    <th style="font-size:14px" >Resultat</th>
+                                    <th style="font-size:14px" >Photo</th>
                                     <th style="font-size:14px" >Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                    <td>
-                                        <h2 class="table-avatar">
-                                            <a href="profile.html" class="avatar avatar-sm me-2">
-                                                <img
-                                                    class="avatar-img rounded-circle"
-                                                    src="assets/img/profiles/avatar-02.jpg"
-                                                    alt="User Image">
-                                                </a>
-                                            <a href="profile.html">Brian Johnson <span>9876543210</span></a>
-                                        </h2>
-                                    </td>
                                     <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                            data-cfemail="60021209010e0a0f080e130f0e200518010d100c054e030f0d">[email&#160;protected]</a>
+                                            data-cfemail="60021209010e0a0f080e130f0e200518010d100c054e030f0d">ayoub moustakim</a>
                                     </td>
                                     <td>$295</td>
-                                    <!-- <td>16 Nov 2020</td> -->
-                                    <td><span class="badge badge-pill bg-success-light">Active</span></td>
-                                    <td class="text-end">
+                                    <td>16 Nov 2020</td>
+                                    <td>16 Nov 2020</td>
+                                    <td>16 Nov 2020</td>
+                                    <td>16 Nov 2020</td>
+
+                                    <td>gfgfgfgfgfg</td>
+                                    <td >
                                         <abbr title="Modifier">
                                             <a href="{{ route('stagiaires.edit', 1)}}"
                                                 class="btn btn-sm btn-white text-success me-2">
@@ -108,10 +104,10 @@
                                                 <!-- <i class="far fa-trash-alt me-1" ></i>Supprimer -->
                                             </a>
                                         </abbr>
+                                                <!-- <button type="button"  class="btn btn-sm btn-white text-danger me-2" id="confirm-text">
+                                                Delete</button> -->
                                     </td>
                                 </tr>
-                                
-                                
                             </tbody>
                         </table>
                     </div>

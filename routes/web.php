@@ -7,7 +7,7 @@ use App\Http\Controllers\MatieresController;
 use App\Http\Controllers\ProgrammeController;
 use App\Http\Controllers\UtilisateurController;
 use App\Models\Programme;
-
+use App\Http\Controllers\AttestationController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,6 +37,11 @@ Route::post('/stagiaires/update/{id}',[StagiaireController::class, "update"])->n
 Route::get('/stagiaires/delete/{id}',[StagiaireController::class, "delete"])->name('stagiaires.delete');
 Route::get('/stagiaires/impression/{id}',[StagiaireController::class, "impression"])->name('stagiaires.impression');
 
+
+Route::get('/stagiaires/impression/{id}',[AttestationController::class, "impression"])->name('stagiaires.impression');
+Route::get('/stagiaires/impression/DemandeDeStage/{id}',[AttestationController::class, "imprimerLaDemandeDeStage"])->name('stagiaires.impDemDeSta');
+Route::get('/stagiaires/impression/AttIns/{id}',[AttestationController::class, "imprimerLaAttestationInscription"])->name('stagiaires.impAttIns');
+Route::get('/stagiaires/impression/AttDeSco/{id}',[AttestationController::class, "imprimerLaAttestationDeScolarite"])->name('stagiaires.AttDeSco');
 
 
 

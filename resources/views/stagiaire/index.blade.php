@@ -106,12 +106,12 @@
                                         </abbr>
                                         <!-- {{ route('stagiaires.delete', 1)}} -->
                                         <abbr title="Supprimer">
-                                             <a href="#" 
+                                            <a href="#" 
                                                 class="btn btn-sm btn-white text-danger me-2" id="confirm-text">
                                                 <i class="far fa-trash-alt me-1" ></i>
                                                 <!-- <i class="far fa-trash-alt me-1" ></i>Supprimer -->
                                             </a>
-                                         </abbr>
+                                        </abbr>
                                                 <!-- <button type="button"  class="btn btn-sm btn-white text-danger me-2" id="confirm-text">
                                                 Delete</button> -->
                                     </td>

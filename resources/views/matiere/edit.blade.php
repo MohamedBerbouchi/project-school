@@ -23,20 +23,22 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <form action="#">
+                    <form action="{{ route('matieres.update',1) }}" method="post">
+                        @csrf
+                        @method('PUT')
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Nom matière</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="nom_matiere" class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <label>Nombre d'heure TP</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="nombre_heure_tp" class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <label>Coefficien</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="coef" class="form-control">
                                 </div>
                                 
                             </div>
@@ -44,11 +46,11 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Nombre d'heure</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="nombre_heure_total" class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <label>Nombre d'heure TH</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="nombre_heure_th" class="form-control">
                                 </div>
                             </div>
                         </div>

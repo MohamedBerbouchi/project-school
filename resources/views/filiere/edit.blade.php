@@ -24,16 +24,18 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <form action="#">
+                    <form action="{{ route('filieres.update',1) }}" method="post">
+                        @csrf
+                        @method('PUT')
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Nom</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="nom" class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <label>Niveau diplôme</label>
-                                    <select class="select">
+                                    <select class="select" name="niveau_diplome">
                                         <option>Select Country</option>
                                         <option>Afghanistan</option>
                                         <option>Afghanistan</option>
@@ -48,11 +50,11 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Durée de Formation</label>
-                                    <input type="date" class="form-control">
+                                    <input type="date" name="duree_formation" class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <label>Niveau d'admission</label>
-                                    <select class="select">
+                                    <select class="select" name="niveau_admission"> 
                                         <option>Select Country</option>
                                         <option>Afghanistan</option>
                                         <option>Afghanistan</option>
@@ -67,63 +69,63 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Stage1</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="stage1" class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <label>Stage2</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="stage2" class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <label>Frais d'inscription</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="frais_inscription" class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <label>Frais mansuel</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="frais_mansuel" class="form-control">
                                 </div>
                                 
                             </div>
 
                             <div class="col-md-6">
-                            
+                               
 
                             <div class="form-group">
                                     <label>Frais d'examen</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="frais_examen" class="form-control">
                                     
                                 </div>
 
                                 <div class="form-group">
                                     <label>Frais de diplôme</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="frais_diplome" class="form-control">
                                 </div>
                 
                                 <div class="form-group">
                                     <label>Date crèation :</label>
-                                    <input type="date" class="form-control">
+                                    <input type="date" name="date_creation" class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <label>N° d'autorisation:</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="num_autorisation" class="form-control">
                                 </div>
                                 
                                 <div class="form-group">
                                     <label>Date qualification :</label>
-                                    <input type="date" class="form-control">
+                                    <input type="date" name="date_qualification" class="form-control">
                                 </div>
                                 <div class="form-group">
                                     <label>N° de qualification :</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="num_qualification" class="form-control">
 
                                 </div>
                                 <div class="form-group">
                                     <label> Date accréditation:</label>
-                                    <input type="date" class="form-control">
+                                    <input type="date" name="date_accreditation" class="form-control">
 
                                 </div>
                                 <div class="form-group">
                                     <label>N° accréditation:</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" name="num_accreditation" class="form-control">
                                 </div>
                             </div>
                         </div>

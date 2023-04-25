@@ -29,13 +29,13 @@
             
             
                 <li class=" @if(request()->is('programmes*') or request()->is('/') ) active @endif">
-                    <a href="{{  route('programmes.index') }}">
+                    <a href="customers.html">
                         <!-- <i class='bx bxs-credit-card'></i>  -->
                         <i class='bx bxs-dashboard'></i>
                         <span>les programmes</span></a>
-                </li> 
+                </li>
                 <li>
-                    <a href="{{  route('utilisateurs.index') }}">
+                    <a href="customers.html">
                         <i class='bx bx-group'></i>
                         <!-- <i class="fa fa-users"></i> -->
                         <span>les utilisateurs</span></a>

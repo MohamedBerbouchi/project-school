@@ -3,9 +3,6 @@
 @extends('layouts.index')
 
 
-
-
-
 @section('content')
 <div class="content container-fluid b h-100" >
 
@@ -29,15 +26,15 @@
                     <div class="panel panel-primary">
                         <div class="panel-body text-center">
                             
-                            <a class="btn btn-primary" 	href="att_inscription.php">
+                            <a class="btn btn-primary" 	href="{{ route('stagiaires.impAttIns',1)}}">
                                 Attestation d'inscription <i class="fe fe-download me-1"></i> 
                             </a>
                             
-                            <a class="btn btn-success" href="">
+                            <a class="btn btn-success" href="{{ route('stagiaires.AttDeSco',1)}}">
                                 Attestation de scolarité <i class="fe fe-download me-1"></i> 
                             </a>
                             
-                            <a class="btn btn-info text-white" href="demande_stage.php">
+                            <a class="btn btn-info text-white" href="{{ route('stagiaires.impDemDeSta',1)}}">
                                 Demande de Stage <i class="fe fe-download me-1"></i> 
                             </a>
                         
@@ -52,7 +49,4 @@
 </div>
 @endsection
 
-@section('title','Les Documents et les Attestations')
 
-
- 
